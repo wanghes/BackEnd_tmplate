@@ -1,0 +1,44 @@
+html{
+	padding:0;
+	margin:0;
+	background:#25547e;
+}
+body {
+	background: url(../images/bg.jpg);
+	padding:0;
+	margin:0;
+	font-family:Arial, "Microsoft Yahei";
+}
+.input {
+	width: 225px;
+	padding: 5px;
+	vertical-align: middle;
+	border:0 none;
+	background:transparent;
+	font-size:18px;
+	font-family:Arial,"Microsoft Yahei";
+}
+.input:focus {
+	outline:0 none;
+}
+.btn {
+	width: 248px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	background:#549fcc url(../images/btn.png) no-repeat;
+	overflow:visible;
+	color:#fff;
+	font-size:20px;
+	cursor:pointer;
+	font-family:Arial, "Microsoft Yahei";
+	border:1px solid #2d2e30;
+	border-radius:5px;
+}
+.btn:hover{
+	background-position:0 -40px;
+}
+.btn:active {
+	background-position:0 -80px;
+}

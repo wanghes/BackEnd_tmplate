@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.clearfix {
+	zoom:1;
+}
+html,body{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	font-family: Arial;
+	color: #333;
+	font-size: 12px;
+	background: #F3F3F3;
+    -moz-user-select: none;
+}
+a, a:visited{
+    text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+table{
+	width: 100%;
+	height: 100%;
+}
+td{
+    display: table-cell;
+    vertical-align: top;
+}
+#head{
+	background-color: #235179;
+}
+.slide, #menu_bar, .left_menu_wrap li{
+    background: url(../images/bg.png);
+}
+
+#menu_bar{
+    height: 30px;
+    background-position: 0 -200px;
+}
+/* -----------[ main_menu -----------  */
+#main_menu ul li{
+    float: left;
+    color: white;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+#main_menu ul li a{
+    color: white;
+    display: block;
+}
+#main_menu ul li:hover{
+    background: #446D91;
+}
+#main_menu ul li.current{
+    font-weight: bold;
+    background: #446D91;
+}
+#main_menu li ul{
+    display: none;
+}
+
+
+#user_status {
+    line-height: 50px;
+    color: white;
+}
+#user_status a{
+    color: #F9A41D;
+}
+/* ----------- main_menu ]-----------  */
+
+.frame{
+	border: none;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #dedede;
+}
+#tab_menu_wrap{
+    margin: 0px 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+}
+#tab_menu{
+    height: 30px;
+    //width: 100%;
+    position: absolute;
+    overflow: hidden;
+    border-left: 1px solid #dedede;
+}
+#tab_menu .tab_list{
+    height: 30px;
+    width: 100000px;
+}
+#tab_menu .tab_list li{
+    border-right: 1px solid #dedede;
+	padding: 0 10px;
+	line-height: 30px;
+    cursor: pointer;
+    height: 30px;
+    color: #999;
+    float: left;
+}
+#tab_menu .tab_list li.current{
+    background: #72A8CF;
+    color: white;
+}
+#tab_menu .tab_list li a{
+    padding-left: 5px;
+    font-size: 14px;
+}
+.tab_list li a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+/*-------------[ leftslide  -------------------*/
+.left_menu_wrap a, .left_menu_wrap a:visited, .left_menu_wrap a:active{
+    color: #333333;
+}
+.left_menu_wrap{
+    margin-top: 10px;
+}
+.left_menu_wrap li{
+    padding: 5px 0 5px 25px;
+    background-position: -270px 10px;
+    background-repeat: no-repeat;
+}
+.left_menu_wrap li.current{
+    background-position: -270px -10px;
+    background-color: #dbdada;
+}
+/*-------------  leftslide  ]-------------------*/
+
+
+/*-------------[ tab slide  -------------------*/
+.slide{
+    display: block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+}
+.slide_left{
+    top: 0px;
+    left: 0;
+}
+.slide_right{
+    top: 0;
+    right: 0;
+    background-position: -20px 0;
+    border-left: 1px solid #dedede;
+}
+/*-------------tab slide  ]-------------------*/
